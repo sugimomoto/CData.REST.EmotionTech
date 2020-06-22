@@ -1,0 +1,112 @@
+<api:script xmlns:api="http://apiscript.com/ns?v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- See Column Definitions to specify column behavior and use XPaths to extract column values from JSON. -->
+  <api:info title="AnswerResultsDummy" desc="Generated schema file." xmlns:other="http://apiscript.com/ns?v1">
+    <!-- You can modify the name, type, and column size here. -->
+
+    <attr name="UID"                 xs:type="string" readonly="false"   description=""         />
+    <attr name="Tags"                xs:type="string" readonly="false"   description=""         />
+    <attr name="Segmanet"            xs:type="string" readonly="false"   description=""         />
+    <attr name="Date"                xs:type="string" readonly="false"   description=""         />
+    <attr name="IPAddress"           xs:type="string" readonly="false"   description=""         />
+    <attr name="UserAgent"           xs:type="string" readonly="false"   description=""         />
+
+    <attr name="Recommend"      xs:type="string" readonly="false"   description="あなたは、通販サイト「Amazon（アマゾン）」の利用を親しい友人や知人にどの程度おすすめしたいと思いますか？ ※０～１０点は、近くにおすすめ出来る人がいたと仮定してお応えください。"         />
+    <attr name="AmazonImage_NPS"      xs:type="string" readonly="false"   description="NPS要因 - Amazon（アマゾン）の企業イメージ"         />
+    <attr name="AmazonImage_Effect"      xs:type="string" readonly="false"   description="影響理由 - Amazon（アマゾン）の企業イメージ"         />
+    <attr name="AmazonExperience_NPS"      xs:type="string" readonly="false"   description="NPS要因 - メディアやSNSでAmazonを見たときの体験（テレビＣＭ、雑誌、WEB等）"         />
+    <attr name="AmazonExperience_Effect"      xs:type="string" readonly="false"   description="影響理由 - メディアやSNSでAmazonを見たときの体験（テレビＣＭ、雑誌、WEB等）"         />
+    <attr name="ProductSearchExperience_NPS"      xs:type="string" readonly="false"   description="NPS要因 - 商品を検索する時のサイト体験（書籍の検索のしやすさ、リコメンド機能など）"         />
+    <attr name="ProductSearchExperience_Effect"      xs:type="string" readonly="false"   description="影響理由 - 商品を検索する時のサイト体験（書籍の検索のしやすさ、リコメンド機能など）"         />
+    <attr name="ProductSelectExperience_NPS"      xs:type="string" readonly="false"   description="NPS要因 - 商品を選ぶときの体験（タイムセールや、マイストアの利便性など）"         />
+    <attr name="ProductSelectExperience_Effect"      xs:type="string" readonly="false"   description="影響理由 - 商品を選ぶときの体験（タイムセールや、マイストアの利便性など）"         />
+    <attr name="CartExperience_NPS"      xs:type="string" readonly="false"   description="NPS要因 - カートやほしいものリストを使うときの体験"         />
+    <attr name="CartExperience_Effect"      xs:type="string" readonly="false"   description="影響理由 - カートやほしいものリストを使うときの体験"         />
+    <attr name="BillExperience_NPS"      xs:type="string" readonly="false"   description="NPS要因 - お会計をするときの体験（決済方法、セキュリティ）"         />
+    <attr name="BillExperience_Effect"      xs:type="string" readonly="false"   description="影響理由 - お会計をするときの体験（決済方法、セキュリティ）"         />
+    <attr name="Delivery_NPS"      xs:type="string" readonly="false"   description="NPS要因 - 商品が到着するまでの体験（期間の長さ、梱包方法）"         />
+    <attr name="Delivery_Effect"      xs:type="string" readonly="false"   description="影響理由 - 商品が到着するまでの体験（期間の長さ、梱包方法）"         />
+    <attr name="AmazonPrime_NPS"      xs:type="string" readonly="false"   description="NPS要因 - プライム会員（amazonprime）"         />
+    <attr name="AmazonPrime_Effect"      xs:type="string" readonly="false"   description="影響理由 - プライム会員（amazonprime）"         />
+    <attr name="OtherServiceExperience_NPS"      xs:type="string" readonly="false"   description="NPS要因 - お買い物以外のサービスを使うときの体験（映像コンテンツ、ホームスピーカー、クレジットカードなど）"         />
+    <attr name="OtherServiceExperience_Effect"      xs:type="string" readonly="false"   description="影響理由 - お買い物以外のサービスを使うときの体験（映像コンテンツ、ホームスピーカー、クレジットカードなど）"         />
+    <attr name="CallCenterExperience_NPS"      xs:type="string" readonly="false"   description="NPS要因 - FAQサイトやコールセンターを利用したときの体験"         />
+    <attr name="CallCenterExperience_Effect"      xs:type="string" readonly="false"   description="影響理由 - FAQサイトやコールセンターを利用したときの体験"         />
+    <attr name="UsedExperience_NPS"      xs:type="string" readonly="false"   description="NPS要因 - 購入した商品を使用したときの体験"         />
+    <attr name="UsedExperience_Effect"      xs:type="string" readonly="false"   description="影響理由 - 購入した商品を使用したときの体験"         />
+    <attr name="OtherCommonUsedEC"      xs:type="string" readonly="false"   description="「Amazon（アマゾン）」以外でよく使いになる通販サイトで以下から当てはまるものをお選び下さい。"         />
+    <attr name="FrequencyAmazon"      xs:type="string" readonly="false"   description="先ほどの通販サイトの内、「Amazon（アマゾン）」の利用頻度は何番目ですか？"         />
+    <attr name="ProductCategoryAmazon"      xs:type="string" readonly="false"   description="「Amazon（アマゾン）」で良く購入する商品カテゴリで、以下から当てはまるものを選択してください。"         />
+    <attr name="HasAmazonPrime"      xs:type="string" readonly="false"   description="あなたは、「Amazon（アマゾン）」プライム会員ですか？"         />
+    <attr name="OtherCommonUsedService"      xs:type="string" readonly="false"   description="「Amazon（アマゾン）」の通販以外のサービスでお使いのものをお選びください。"         />
+    <attr name="FrequencyBuyAmazon"      xs:type="string" readonly="false"   description="「Amazon（アマゾン）」での購入頻度について、最も当てはまるものを教えてください。"         />
+    <attr name="Sex"      xs:type="string" readonly="false"   description="あなたの性別を教えてください。"         />
+    <attr name="Age"      xs:type="string" readonly="false"   description="あなたの年代を教えてください。"         />
+
+  </api:info>
+
+  <!-- The GET method corresponds to SELECT. Here you can override the default processing of the SELECT statement. The results of processing are pushed to the schema's output. See SELECT Execution for more information. -->
+  <api:script method="GET">
+
+    <api:set attr="BaseRequest.DataModel" value="DOCUMENT" />
+    <api:set attr="BaseRequest.URI" value="C:\\CData_REST\\EmotionTech\\SampleData\\Answers.json" />
+    <api:set attr="BaseRequest.JSONPath" value="$.result.answer_results" />
+    <api:set attr="BaseRequest.ElementMapPath#1" value="/json/result/answer_results/field" />
+    <api:set attr="BaseRequest.ElementMapName#1" value="field" />
+    <api:set attr="BaseRequest.ElementMapPath#2" value="/json/result/answer_results/type" />
+    <api:set attr="BaseRequest.ElementMapName#2" value="type" />
+    <api:set attr="BaseRequest.ElementMapPath#3" value="/json/result/answer_results/values" />
+    <api:set attr="BaseRequest.ElementMapName#3" value="values" />
+
+    <api:call op="jsonproviderGet" input="BaseRequest" output="BaseResponse">
+      <api:set attr="_input.Params.[BaseResponse.field]" value="[BaseResponse.values | replace('\[','')  | replace('\]','')]"/>
+
+
+
+      <api:if attr="BaseResponse.field" value="user_agent" operator="equals">
+
+
+        <api:set attr="BaseResponse.UID" value="[_input.Params.uid | def() ]"/>
+        <api:set attr="BaseResponse.Tags" value="[_input.Params.tags | def() ]"/>
+        <api:set attr="BaseResponse.Segmanet" value="[_input.Params.segment | def() ]"/>
+        <api:set attr="BaseResponse.Date" value="[_input.Params.date | def() ]"/>
+        <api:set attr="BaseResponse.Recommend" value="[_input.Params.10901 | def() ]"/>
+        <api:set attr="BaseResponse.IPAddress" value="[_input.Params.ip_address | def() ]"/>
+        <api:set attr="BaseResponse.UserAgent" value="[_input.Params.user_agent | def() ]"/>
+        <api:set attr="BaseResponse.AmazonImage_NPS" value="[_input.Params.10903_6447 | def() ]"/>
+        <api:set attr="BaseResponse.AmazonImage_Effect" value="[_input.Params.10903_6447_10902 | def() ]"/>
+        <api:set attr="BaseResponse.AmazonExperience_NPS" value="[_input.Params.10903_6448 | def() ]"/>
+        <api:set attr="BaseResponse.AmazonExperience_Effect" value="[_input.Params.10903_6448_10904 | def() ]"/>
+        <api:set attr="BaseResponse.ProductSearchExperience_NPS" value="[_input.Params.10903_6449 | def() ]"/>
+        <api:set attr="BaseResponse.ProductSearchExperience_Effect" value="[_input.Params.10903_6449_10905 | def() ]"/>
+        <api:set attr="BaseResponse.ProductSelectExperience_NPS" value="[_input.Params.10903_6450 | def() ]"/>
+        <api:set attr="BaseResponse.ProductSelectExperience_Effect" value="[_input.Params.10903_6450_10906 | def() ]"/>
+        <api:set attr="BaseResponse.CartExperience_NPS" value="[_input.Params.10903_6451 | def() ]"/>
+        <api:set attr="BaseResponse.CartExperience_Effect" value="[_input.Params.10903_6451_10907 | def() ]"/>
+        <api:set attr="BaseResponse.BillExperience_NPS" value="[_input.Params.10903_6452 | def() ]"/>
+        <api:set attr="BaseResponse.BillExperience_Effect" value="[_input.Params.10903_6452_10908 | def() ]"/>
+        <api:set attr="BaseResponse.Delivery_NPS" value="[_input.Params.10903_6453 | def() ]"/>
+        <api:set attr="BaseResponse.Delivery_Effect" value="[_input.Params.10903_6453_10909 | def() ]"/>
+        <api:set attr="BaseResponse.AmazonPrime_NPS" value="[_input.Params.10911_6454 | def() ]"/>
+        <api:set attr="BaseResponse.AmazonPrime_Effect" value="[_input.Params.10911_6454_10910 | def() ]"/>
+        <api:set attr="BaseResponse.OtherServiceExperience_NPS" value="[_input.Params.10911_6455 | def() ]"/>
+        <api:set attr="BaseResponse.OtherServiceExperience_Effect" value="[_input.Params.10911_6455_10912 | def() ]"/>
+        <api:set attr="BaseResponse.CallCenterExperience_NPS" value="[_input.Params.10911_6456 | def() ]"/>
+        <api:set attr="BaseResponse.CallCenterExperience_Effect" value="[_input.Params.10911_6456_10913 | def() ]"/>
+        <api:set attr="BaseResponse.UsedExperience_NPS" value="[_input.Params.10911_6457 | def() ]"/>
+        <api:set attr="BaseResponse.UsedExperience_Effect" value="[_input.Params.10911_6457_10914 | def() ]"/>
+        <api:set attr="BaseResponse.OtherCommonUsedEC" value="[_input.Params.10915 | def() ]"/>
+        <api:set attr="BaseResponse.FrequencyAmazon" value="[_input.Params.10916 | def() ]"/>
+        <api:set attr="BaseResponse.ProductCategoryAmazon" value="[_input.Params.10917 | def() ]"/>
+        <api:set attr="BaseResponse.HasAmazonPrime" value="[_input.Params.10918 | def() ]"/>
+        <api:set attr="BaseResponse.OtherCommonUsedService" value="[_input.Params.10919 | def() ]"/>
+        <api:set attr="BaseResponse.FrequencyBuyAmazon" value="[_input.Params.10920 | def() ]"/>
+        <api:set attr="BaseResponse.Sex" value="[_input.Params.10921 | def() ]"/>
+
+        <api:push />
+      </api:if>
+
+    </api:call>
+  </api:script>
+
+</api:script>
